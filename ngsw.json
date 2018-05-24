@@ -1,0 +1,65 @@
+{
+  "configVersion": 1,
+  "index": "https://frxception.github.io/progress-bar-demo-app/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://frxception.github.io/progress-bar-demo-app/favicon.ico",
+        "https://frxception.github.io/progress-bar-demo-app/index.html"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://frxception.github.io/progress-bar-demo-app/assets/CNAME",
+        "https://frxception.github.io/progress-bar-demo-app/assets/css/loading.css",
+        "https://frxception.github.io/progress-bar-demo-app/assets/css/reset.css",
+        "https://frxception.github.io/progress-bar-demo-app/assets/i18n/en.json",
+        "https://frxception.github.io/progress-bar-demo-app/assets/i18n/zh.json",
+        "https://frxception.github.io/progress-bar-demo-app/assets/images/404.gif",
+        "https://frxception.github.io/progress-bar-demo-app/assets/images/github-circle-white-transparent.svg",
+        "https://frxception.github.io/progress-bar-demo-app/assets/js/gtm.js",
+        "https://frxception.github.io/progress-bar-demo-app/assets/js/modernizr.js"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://frxception.github.io/progress-bar-demo-app/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://frxception.github.io/progress-bar-demo-app/assets/CNAME": "6fba9b779334d6bede519db384e95ebed3213961",
+    "https://frxception.github.io/progress-bar-demo-app/index.html": "9477f6b95383fafd0329bbdfe5df4855a21aaff4",
+    "https://frxception.github.io/progress-bar-demo-app/assets/css/loading.css": "437662ae98dfff2e8c6c7a922f16e8029ce12935",
+    "https://frxception.github.io/progress-bar-demo-app/assets/css/reset.css": "82d5673e122656776dfc4e78e2883974f5eb0cdc",
+    "https://frxception.github.io/progress-bar-demo-app/assets/i18n/en.json": "62bb2c53b6aaf16506b400f612216800d59918e1",
+    "https://frxception.github.io/progress-bar-demo-app/assets/i18n/zh.json": "97c9546844f8797d41c14d4b696694a2476bcdbe",
+    "https://frxception.github.io/progress-bar-demo-app/assets/images/404.gif": "5884765f20002934d84bbe9fb8cca3a46dc1326f",
+    "https://frxception.github.io/progress-bar-demo-app/assets/images/github-circle-white-transparent.svg": "349b787ee896c7131dbaee6a8e37e1bfff40c7e5",
+    "https://frxception.github.io/progress-bar-demo-app/assets/js/gtm.js": "7ea19a5e25bf754d6b86018c394bfc3e21ae51eb",
+    "https://frxception.github.io/progress-bar-demo-app/assets/js/modernizr.js": "150b77e7d9c4fd1be99e62508a151c197ea906a7"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
