@@ -1,0 +1,113 @@
+<div fxLayout="row">
+    <div fxFlex="10" fxFlex.gt-sm="20"></div>
+    <div fxFlex="90" fxFlex.gt-sm="80">
+        <h1 class="header__title" id="homePage">{{'homeHeader' | translate}}</h1>
+
+        <div class="clear flex-spacer"></div>
+
+        <div class="content-bar">
+            
+
+            <mat-card-header>
+                <mat-progress-spinner class="mat-progress-spinner" *ngIf="!pbData"
+                                      class="progress__spinner"
+                                      [color]="'warn'"
+                                      [mode]="'indeterminate'">    
+                                    
+                </mat-progress-spinner>
+            </mat-card-header>
+
+
+            
+                <div *ngIf="pbData" >
+
+
+                    <mat-grid-list cols="2" gutterSize="15px" >
+                        <mat-grid-tile id="pbarGrid" *ngFor="let tile of pbBars.tiles"
+                                       [colspan] ="tile.cols"
+                                       [rowspan] = "tile.rows"
+                                       [style.background]="(selectedBar == tile.idx) ? selectedBarBgcolor : tile.bgcolor">
+
+                            <div class="current" [ngStyle]="getOverlayStyle()">{{ getBarPercentage(tile.dynamicValue.realCurrent, max) }}%</div>
+                            <div class="bar-title" [ngStyle]="getBarTitleStyle()">{{ 'bar' | translate }} {{" " +tile.text}}</div>
+
+                            <round-progress
+                                        [current]="tile.dynamicValue.current"
+                                        [max]="max"
+                                        [stroke]="stroke"
+                                        [radius]="radius"
+                                        [semicircle]="semicircle"
+                                        [rounded]="rounded"
+                                        [responsive]="responsive"
+                                        [clockwise]="clockwise"
+                                        [color]="tile.dynamicValue.color"
+                                        [background]="tile.bgcolor"
+                                        [duration]="duration"
+                                        [animation]="animation"
+                                        [animationDelay]="animationDelay"></round-progress>
+
+
+                        </mat-grid-tile>
+
+                    </mat-grid-list>
+                    
+                    
+
+
+                    <mat-card class="button-opts">
+
+                        <mat-tab-group color="warn">
+                            <mat-tab label="{{'pbHomeTabContentController'|translate}}">
+                                    
+                                <span class="select-bar">
+                                    <mat-form-field color="warn">
+                                        <mat-select placeholder="{{'tabSelectOpt' | translate}}" [(ngModel)]="selectedBar" >
+                                            <mat-option  *ngFor="let bar of pbBars.tiles " [value]="bar.idx" >
+                                                {{ 'bar' | translate }} {{" " +bar.text}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </span>
+
+                                
+                                <ng-container *ngIf="selectedBar != -1">
+                                    <a mat-raised-button *ngFor="let item of pbData.buttons index as i" [attr.data-index]="i" id="bar_btn_{{i}}" (click)="increment(item);" >
+                                        {{buttonLabel(item)}}
+                                    </a>
+                                </ng-container>
+                            </mat-tab>
+                            
+                            <mat-tab label="{{'pbHomeTabContentApi'|translate}}">
+                                <pre><code class="lang-json">{{apiRaw.endPoint}}</code></pre>
+                                <mat-divider></mat-divider>
+                                <br>
+                                <a mat-raised-button  (click)="reload()" >
+                                    {{ 'reload' | translate }}
+                                </a>
+                            </mat-tab>
+                            
+                            
+                        </mat-tab-group>
+                        
+                        
+                    </mat-card>
+                    
+                    
+                    
+                </div>
+                
+                
+            
+        </div>
+
+        
+        
+    </div>
+    
+    <div fxFlex="10" fxFlex.gt-sm="20"></div>
+    
+</div>
+
+
+
+

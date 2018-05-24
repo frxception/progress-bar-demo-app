@@ -1,0 +1,150 @@
+@import "mixins";
+
+
+.hero-header__image, mat-card-title, mat-card-subtitle, .mat-card-image {
+  cursor: pointer;
+}
+
+.home-card {
+  @include push--auto(2rem);
+}
+
+.progress__spinner {
+  @include push--auto();
+}
+
+@media (max-width: 680px) {
+  .home-card {
+    width: 100%;
+    @include push--auto();
+  }
+
+  .mat-card {
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .select-bar{
+    margin-right: 10px;
+    position: relative;
+    top: 14px;
+    min-height: 500px !important;
+    width: 100px;
+    //background-color: blue;
+  }
+
+}
+
+
+.cf:before,
+.cf:after {
+  content: ' ';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.content-bar {
+  margin-top:20px;
+}
+
+.current {
+  position: absolute;
+  color: #8c8c8c;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.bar-title{
+  color: #a5a5a5;
+  position: absolute;
+  font-size: 14px;
+  //margin-top: -77px;
+}
+
+
+.button-opts{
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+.select-bar{
+  margin-right: 10px;
+  position: relative;
+  top: 4px;
+  min-height: 500px !important;
+} 
+
+
+round-progress {
+  margin: auto;
+}
+
+.mat-tab-body-content{
+  height: 180px !important;
+  min-height: 100px !important;
+  //max-height: 300px !important;
+  padding-top:20px;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: 40px auto 80px;
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #45ccce;
+  color:#fff;
+  font-size: 16px;
+  border:none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 5px 5px 0;
+}
+
+form {
+  text-align: left;
+  max-width: 350px;
+  margin: 30px auto;
+}
+
+form > div {
+  margin-bottom: 15px;
+}
+
+input, select {
+  float: right;
+  padding: 5px;
+  width: 150px;
+}
+
+input[type='checkbox'] {
+  width: auto;
+}
+
+input[type='color'] {
+  height: 30px;
+}
+
+
+.mat-grid-tile .mat-figure{
+  height: 53% !important;
+  top: 25% !important;
+}
+
+

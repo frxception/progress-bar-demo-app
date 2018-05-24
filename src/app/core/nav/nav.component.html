@@ -1,0 +1,35 @@
+<header>
+    <nav>
+        <div fxFlex fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+            <div fxFlex="60">
+                <a mat-raised-button *ngFor="let item of menuItems" routerLink="{{item.link}}">
+                    {{item.name | uppercase}}
+                </a>
+                <span class="envBuild"> {{environment}}</span>
+            </div>
+            <div fxFlex class="text--right">
+                <button class="language" mat-icon-button [matMenuTriggerFor]="matmenu" >{{currentLang | translate}} 
+                    <mat-icon>public</mat-icon>
+                </button>
+                <mat-menu #matmenu="matMenu">
+                    <button mat-menu-item (click)="changeLanguage('zh')">
+                        <span>
+                            {{'ch' | translate}}
+                        </span>
+                    </button>
+                    <button mat-menu-item (click)="changeLanguage('en')">
+                        <span>
+                            {{'en' | translate}}
+                        </span>
+                    </button>
+                    
+                </mat-menu>
+                
+            </div>
+        </div>
+    </nav>
+    <section class="progress-bar">
+        <mat-progress-bar [color]="'primary'" [mode]="progressBarMode">
+        </mat-progress-bar>
+    </section>
+</header>

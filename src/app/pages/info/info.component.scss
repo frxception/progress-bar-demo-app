@@ -1,0 +1,41 @@
+@import "mixins";
+
+#left {
+  width: 50%;
+  float: left;
+  margin-left: 6%;
+}
+
+#right {
+  margin-left: 50%;
+  text-align: center;
+  padding-right: 17%;
+}
+
+.clear {
+  clear: both;
+}
+
+.mat-list {
+  @include push--auto();
+  display: table;
+
+  /deep/ .mat-list-text {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 680px) {
+  #left {
+    width: 100%;
+    float: none;
+    @include push--auto();
+  }
+
+  #right {
+    margin: 1em auto 0;
+    width: 90%;
+    float: none;
+    padding: 0;
+  }
+}
