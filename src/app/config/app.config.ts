@@ -10,7 +10,7 @@ export const AppConfig: IAppConfig = {
         error404: '404'
     },
     endpoints: {
-        progressBarAPI: 'http://pb-api.herokuapp.com/bars'
+        progressBarAPI: 'https://pb-api.herokuapp.com/bars'
     },
 
     snackBarDuration: 3000,

@@ -4,13 +4,11 @@
 
 ## [SEE THE COOL DEMO](http://progressbarsapp.com/)
 
-[![progress-bar-demo-app](http://thumbsnap.com/i/aIpN07i3.png?0812)](http://progressbarsapp.com/)
-
 ## Getting started
 
 **Warning**
 
-> NO JQUERY WAS USED HERE.
+> NO JQUERY WAS NOT USED HERE.
 
 1. Go to project folder and install dependencies.
  ```bash

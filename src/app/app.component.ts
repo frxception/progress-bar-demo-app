@@ -39,10 +39,10 @@ export class AppComponent implements OnInit {
             });
             break;
           case '/' + AppConfig.routes.pages:
-            this.title.setTitle('Heroes list');
+            this.title.setTitle('Info page');
             this.meta.updateTag({
               name: 'description',
-              content: 'List of super-heroes'
+              content: 'Info page contents'
             });
             break;
         }

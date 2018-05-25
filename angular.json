@@ -5,6 +5,7 @@
   "projects": {
     "progress-bar-demo-app": {
       "root": "",
+      "sourceRoot": "src",
       "projectType": "application",
       "architect": {
         "build": {
@@ -21,9 +22,24 @@
                 "input": "src/assets",
                 "output": "/assets"
               },
+//              {
+//                "glob": "**/*",
+//                "input": "src/assets/i18n",
+//                "output": "/"
+//              },
               {
                 "glob": "favicon.ico",
                 "input": "src",
+                "output": "/"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "src/assets",
+                "output": "/"
+              },
+              {
+                "glob": "googled41787c6aae2151b.html",
+                "input": "src/assets",
                 "output": "/"
               },
               {
