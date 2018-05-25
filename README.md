@@ -87,4 +87,4 @@ I use Travis CI to run this tasks in order:
 * Make the progress bar component as a module or as a reusable component
 * Add more animation and colors to the bars
 
-Thank you :heart:
+I had fun! Thank you :heart:
