@@ -154,10 +154,10 @@ var AppComponent = /** @class */ (function () {
                         });
                         break;
                     case '/' + _config_app_config__WEBPACK_IMPORTED_MODULE_4__["AppConfig"].routes.pages:
-                        _this.title.setTitle('Heroes list');
+                        _this.title.setTitle('Info page');
                         _this.meta.updateTag({
                             name: 'description',
-                            content: 'List of super-heroes'
+                            content: 'Info page contents'
                         });
                         break;
                 }
@@ -317,8 +317,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @ngx-translate/http-loader */ "./node_modules/@ngx-translate/http-loader/esm5/ngx-translate-http-loader.js");
 
 function HttpLoaderFactory(http) {
-    // return new TranslateHttpLoader(http); // note: this is causing issues in build prod
-    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_0__["TranslateHttpLoader"](http, 'progress-bar-demo-app/assets/i18n/', '.json');
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_0__["TranslateHttpLoader"](http); // note: this is causing issues in build prod
+    //   return new TranslateHttpLoader(http, 'progress-bar-demo-app/assets/i18n/', '.json');
 }
 
 
