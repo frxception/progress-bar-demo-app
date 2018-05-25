@@ -4,10 +4,58 @@
         <h1 class="header__title">{{ 'info' | translate }}</h1>
 
 
-    <!--TODO: PUT THE INFO CONTENT OF THIS PROJECT HERE-->
-        
-        
-        
+        <!--TODO: PUT THE INFO CONTENT OF THIS PROJECT HERE-->
+
+        <br>
+        <mat-card>
+
+            <h1 class="header-desc">Description</h1>
+            <br>
+            <pre>
+                "buttons": [
+                        10,
+                        38,
+                        -13,
+                        -18
+                    ],
+                    "bars": [
+                        62,
+                        45,
+                        62
+                    ],
+                    "limit": 230
+                }
+            </pre>
+            <div class="info">
+                <mat-card>
+                    <h2>buttons</h2>
+                    <Br>
+                    <mat-card-content>
+                        The amount of buttons to display and what value they increment or decrement the selected bar. Randomly generates
+                        between 4 and 6 buttons.
+                    </mat-card-content>
+                </mat-card>
+
+                <mat-card>
+                    <h2>bars</h2>
+                    <Br>
+                    <mat-card-content>
+                        The number of progress bars to display and their default values. Randomly generates between 2 and 5 progress bars.
+                    </mat-card-content>
+                </mat-card>
+
+                <mat-card>
+                    <h2>limit</h2>
+                    <Br>
+                    <mat-card-content>
+                        The equivalent to 100% of each bar. For example, the bar should be 100% filled when the progress hits 230.
+                    </mat-card-content>
+                </mat-card>
+             
+            </div>
+        </mat-card>
+
+
     </div>
 
     <div fxFlex="10" fxFlex.gt-sm="20"></div>

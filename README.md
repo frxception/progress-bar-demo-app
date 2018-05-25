@@ -2,7 +2,7 @@
 
 > ### This project is created for a very important purpose :smiley:
 
-## [SEE THE COOL DEMO](http://progressbarsapp.com/)
+## [SEE THE COOL DEMO](https://frxception.github.io/progress-bar-demo-app/)
 
 ## Getting started
 
@@ -48,21 +48,20 @@ npm run docker-local         | Build the docker image and run the container loca
 ## Features
 
 * Using angular-svg-round-progressbar module
+* Uglification / Minification
 * Interceptors and Events 
 * Responsive layout (flex layout module)
-* SASS (most common used functions and mixins) and BEM styles
+* SASS (most common used functions and mixins)
 * I18n Internationalization
 * Lazy loading modules
 * Service Workers
 * Dynamic Imports
-* Basic example library
 * Modernizr (browser features detection)
 * Github pages deploy ready
 * ES6 Promises and Observables
 * Unit tests with Jasmine and Karma including code coverage
-* End-to-end tests with Protractor
+* End-to-end tests using Protractor
 * Basic docker integration
-
 
 ## Docker
 
