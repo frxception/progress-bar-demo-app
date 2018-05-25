@@ -6,9 +6,9 @@
 
 ## Getting started
 
-**Warning**
+**NOTICE**
 
-> NO JQUERY WAS USED HERE.
+> NO JQUERY WAS USED HERE :smiley:
 
 1. Go to project folder and install dependencies.
  ```bash
@@ -72,7 +72,7 @@ Build the image and run the container with Docker and the configuration is in th
 `docker run -d -p 4200:80 progressbarsapp`
 
 
-## Travis CI
+## Continous Integration
 
 I use Travis CI to run this tasks in order:
 * Deploy in Github pages
@@ -80,5 +80,11 @@ I use Travis CI to run this tasks in order:
 * Tests
 * Build for production
 
+
+## TODO
+* Need to publish docker any cloud services
+* Make the bars configurable
+* Make the progress bar component as a module or as a reusable component
+* Add more animation and colors to the bars
 
 Thank you :heart:
