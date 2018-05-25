@@ -1,6 +1,6 @@
 {
   "name": "progress-bar-demo-app",
-  "version": "8.0.0",
+  "version": "8.1.0",
   "license": "MIT",
   "scripts": {
     "start": "ng serve --open",
@@ -16,8 +16,8 @@
     "lint": "ng lint",
     "test-all": "npm run lint && npm run lint:library && npm run test  && npm run e2e",
     "sme": "ng build && source-map-explorer dist/main.bundle.js",
-    "gh-release:minor": "standard-version --release-as minor && git push --follow-tags origin master",
-    "gh-release:major": "standard-version --release-as major && git push --follow-tags origin master",
+    "gh-release-minor": "standard-version --release-as minor && git push --follow-tags origin master",
+    "gh-release-major": "standard-version --release-as major && git push --follow-tags origin master",
     "docker-local": "docker build -t progressbarsapp . && docker run -d -p 4200:80 progressbarsapp"
   },
   "private": true,
