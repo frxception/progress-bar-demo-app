@@ -15,5 +15,15 @@ export class HomePage {
     static getHeaderTitle(): any {
         return element(by.css('#homePage')).getText();
     }
+    
+    static getSelectedBar(): any{
+        element.all(by.css('mat-select')).each(function (eachElement, index) {
+            eachElement.click();                 
+            browser.driver.sleep(500);
+            element(by.css('mat-option')).click();
+            browser.driver.sleep(500);
+        });
+        return element(by.css('mat-select')).getText();
+    }
 }
 

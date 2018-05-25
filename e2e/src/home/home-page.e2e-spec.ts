@@ -23,6 +23,9 @@ describe('Home page', function () {
         expect<any>(HomePage.getPBarBoxesCount()).toBeGreaterThanOrEqual(2);
     });
 
-
+    it('should contains progress bar controls click select bar', () => {
+        HomePage.navigateTo();
+        expect<any>(HomePage.getSelectedBar()).toEqual('Bar 1');
+    });
 
 });

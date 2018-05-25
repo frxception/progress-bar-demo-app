@@ -25,7 +25,7 @@ import {RoundProgressModule,
 @NgModule({
     imports: [
         BrowserModule,
-        ServiceWorkerModule.register('./ngsw-worker.js', {enabled: environment.production}),
+        ServiceWorkerModule.register('./ngsw-worker.js', {enabled: environment.production}), // note: we use './' for prod deployment with sub url directory location
         BrowserAnimationsModule,
         FormsModule,
         HttpClientModule,

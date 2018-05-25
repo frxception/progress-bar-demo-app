@@ -6,7 +6,8 @@
     "start": "ng serve --open",
     "http-server": "http-server dist/ -c-1",
     "build": "ng build",
-    "build-prod": "ng build --prod",
+    "build-prod-local": "ng build --prod",
+    "build-prod-remote": "ng build --prod --base-href https://frxception.github.io/progress-bar-demo-app",
     "deploy-prod-github": "ng build --prod --base-href https://frxception.github.io/progress-bar-demo-app/ && ngh",
     "deploy-prod-local": "ng build --prod && http-server dist/ -c-1",
     "test": "ng test",
@@ -15,9 +16,9 @@
     "lint": "ng lint",
     "test-all": "npm run lint && npm run lint:library && npm run test  && npm run e2e",
     "sme": "ng build && source-map-explorer dist/main.bundle.js",
-    "release:minor": "standard-version --release-as minor && git push --follow-tags origin master",
-    "release:major": "standard-version --release-as major && git push --follow-tags origin master",
-    "docker": "docker build -t progressbarsapp . && docker run -d -p 4200:80 progressbarsapp"
+    "gh-release:minor": "standard-version --release-as minor && git push --follow-tags origin master",
+    "gh-release:major": "standard-version --release-as major && git push --follow-tags origin master",
+    "docker-local": "docker build -t progressbarsapp . && docker run -d -p 4200:80 progressbarsapp"
   },
   "private": true,
   "engines": {
