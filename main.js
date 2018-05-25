@@ -318,7 +318,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function HttpLoaderFactory(http) {
     // return new TranslateHttpLoader(http); // note: this is causing issues in build prod
-    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_0__["TranslateHttpLoader"](http, './assets/i18n/', '.json');
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_0__["TranslateHttpLoader"](http, 'progress-bar-demo-app/assets/i18n/', '.json');
 }
 
 
